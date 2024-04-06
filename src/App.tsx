@@ -1,9 +1,10 @@
 import "./App.css";
+import SideBar from "./components/SideBar";
 
 function App() {
   return (
     <div>
-      <h1 className="text-center text-2xl font-bold underline">Hello World</h1>
+      <SideBar />
     </div>
   );
 }
