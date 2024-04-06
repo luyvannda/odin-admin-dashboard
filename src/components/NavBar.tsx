@@ -3,11 +3,11 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Home", href: "#", current: true },
-  { name: "Messages", href: "#", current: false },
-  { name: "History", href: "#", current: false },
-  { name: "Tasks", href: "#", current: false },
-  { name: "Communities", href: "#", current: false },
+  { name: "Home", icon: "home", href: "#", current: true },
+  { name: "Messages", icon: "message", href: "#", current: false },
+  { name: "History", icon: "history", href: "#", current: false },
+  { name: "Tasks", icon: "task", href: "#", current: false },
+  { name: "Communities", icon: "groups", href: "#", current: false },
 ];
 
 function classNames(...classes: string[]) {
@@ -35,27 +35,31 @@ export default function NavBar() {
                   </Disclosure.Button>
                 </div>
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                  <div className="flex flex-shrink-0 items-center">
-                    <span className="material-icons text-2xl text-white">
-                      dashboard
-                    </span>
+                  <div className="flex items-center gap-1 text-xl text-white">
+                    <span className="material-icons text-2xl ">dashboard</span>
+                    Dashboard
                   </div>
                   <div className="hidden sm:ml-6 sm:block">
                     <div className="flex space-x-4">
                       {navigation.map((item) => (
-                        <a
-                          key={item.name}
-                          href={item.href}
-                          className={classNames(
-                            item.current
-                              ? "bg-gray-900 text-white"
-                              : "text-gray-100 hover:bg-gray-700 hover:text-white",
-                            "rounded-md px-3 py-2 text-sm font-medium",
-                          )}
-                          aria-current={item.current ? "page" : undefined}
-                        >
-                          {item.name}
-                        </a>
+                        <div className="flex items-center">
+                          <span className="material-icons text-white">
+                            {item.icon}
+                          </span>
+                          <a
+                            key={item.name}
+                            href={item.href}
+                            className={classNames(
+                              item.current
+                                ? "bg-gray-900 text-white"
+                                : "text-gray-100 hover:bg-gray-700 hover:text-white",
+                              "rounded-md px-3 py-2 text-sm font-medium",
+                            )}
+                            aria-current={item.current ? "page" : undefined}
+                          >
+                            {item.name}
+                          </a>
+                        </div>
                       ))}
                     </div>
                   </div>
@@ -119,6 +123,35 @@ export default function NavBar() {
                             </a>
                           )}
                         </Menu.Item>
+
+                        <Menu.Item>
+                          {({ active }) => (
+                            <a
+                              href="#"
+                              className={classNames(
+                                active ? "bg-gray-100" : "",
+                                "block px-4 py-2 text-sm text-gray-700",
+                              )}
+                            >
+                              Support
+                            </a>
+                          )}
+                        </Menu.Item>
+
+                        <Menu.Item>
+                          {({ active }) => (
+                            <a
+                              href="#"
+                              className={classNames(
+                                active ? "bg-gray-100" : "",
+                                "block px-4 py-2 text-sm text-gray-700",
+                              )}
+                            >
+                              Privacy
+                            </a>
+                          )}
+                        </Menu.Item>
+
                         <Menu.Item>
                           {({ active }) => (
                             <a
@@ -154,7 +187,10 @@ export default function NavBar() {
                     )}
                     aria-current={item.current ? "page" : undefined}
                   >
-                    {item.name}
+                    <div className="flex items-center gap-2">
+                      <span className="material-icons ">{item.icon}</span>
+                      {item.name}
+                    </div>
                   </Disclosure.Button>
                 ))}
               </div>
