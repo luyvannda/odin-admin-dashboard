@@ -1,6 +1,6 @@
 import { Disclosure } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import ProfileDropDown from "./ProfileDropDown";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import BellProfile from "./BellProfile";
 import { navigation } from "../constants";
 
 export function classNames(...classes: string[]) {
@@ -32,10 +32,13 @@ export default function NavBar() {
                     <span className="material-icons text-2xl ">dashboard</span>
                     Dashboard
                   </div>
-                  <div className="hidden sm:ml-6 sm:block">
+
+                  {/* SideBar for tablet design */}
+
+                  {/* <div className="hidden sm:ml-6 sm:block">
                     <div className="flex space-x-4">
                       {navigation.map((item) => (
-                        <div className="flex items-center">
+                        <div key={item.id} className="flex items-center">
                           <span className="material-icons text-white">
                             {item.icon}
                           </span>
@@ -55,21 +58,12 @@ export default function NavBar() {
                         </div>
                       ))}
                     </div>
-                  </div>
+                  </div> */}
                 </div>
-                <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                  <button
-                    type="button"
-                    className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-                  >
-                    <span className="absolute -inset-1.5" />
-                    <span className="sr-only">View notifications</span>
-                    <BellIcon className="h-6 w-6" aria-hidden="true" />
-                  </button>
 
-                  {/* Profile dropdown */}
-
-                  <ProfileDropDown />
+                {/* Profile dropdown */}
+                <div className="sm:hidden">
+                  <BellProfile />
                 </div>
               </div>
             </div>
@@ -78,7 +72,7 @@ export default function NavBar() {
               <div className="space-y-1 px-2 pb-3 pt-2">
                 {navigation.map((item) => (
                   <Disclosure.Button
-                    key={item.name}
+                    key={item.id}
                     as="a"
                     href={item.href}
                     className={classNames(

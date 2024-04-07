@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply grid;
+  }
+}
+
+@layer components {
+  .wrapper {
+    @apply grid sm:grid-cols-app-col sm:grid-rows-app-row;
+  }
+}
