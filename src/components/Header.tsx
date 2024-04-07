@@ -2,8 +2,8 @@ import BellProfile from "./BellProfile";
 
 export default function Header() {
   return (
-    <div className=" sm: items-center sm:flex sm:justify-center ">
-      <div className="flex items-center justify-center gap-2 p-4 sm:px-0">
+    <div className=" items-center sm:flex sm:justify-center ">
+      <div className="flex items-center justify-center gap-2 p-4 sm:p-0">
         <label htmlFor="search-bar">
           <span className="material-icons">search</span>
         </label>
