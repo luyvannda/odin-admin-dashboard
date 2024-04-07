@@ -9,7 +9,7 @@ export function classNames(...classes: string[]) {
 
 export default function NavBar() {
   return (
-    <div>
+    <div className="navbar-container">
       <Disclosure as="nav" className="bg-[#1992d4]">
         {({ open }) => (
           <>

@@ -12,4 +12,8 @@
   .wrapper {
     @apply grid sm:grid-cols-app-col sm:grid-rows-app-row;
   }
+
+  .navbar-container {
+    @apply grid sm:col-start-1 sm:col-end-2 sm:row-start-1 sm:row-end-3;
+  }
 }

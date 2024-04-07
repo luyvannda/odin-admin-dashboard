@@ -62,7 +62,6 @@ export default function BellProfile() {
           </Menu.Items>
         </Transition>
       </Menu>
-      ;
     </div>
   );
 }
