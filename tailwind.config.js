@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       gridTemplateColumns: {
-        "app-col": "minmax(120px,1fr) 3fr",
+        "app-col": "minmax(auto, 250px) 3fr",
       },
 
       gridTemplateRows: {
