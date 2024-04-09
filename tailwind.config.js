@@ -9,6 +9,7 @@ export default {
 
       gridTemplateRows: {
         "app-row": "1fr 4fr",
+        "header-row": "auto 1fr",
       },
     },
   },
