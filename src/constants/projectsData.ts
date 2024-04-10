@@ -1,4 +1,12 @@
-export const Projects = [
+export type ProjectsProp = {
+  id: number;
+  imgCover: string;
+  title: string;
+  livePreview: string;
+  sourceCode: string;
+};
+
+export const projectsData: ProjectsProp[] = [
   {
     id: 1,
     imgCover: "odin-calculator.webp",
@@ -26,6 +34,7 @@ export const Projects = [
   {
     id: 4,
     imgCover: "pizza-menu.webp",
+    title: "PIZZA MENU",
     livePreview: "https://luyvannda.github.io/pizza-menu/",
     sourceCode: "https://github.com/luyvannda/pizza-menu",
   },

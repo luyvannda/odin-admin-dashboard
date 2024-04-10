@@ -32,4 +32,9 @@
   .main-container {
     @apply grid grid-cols-1;
   }
+
+  /* this is for Projects card layout for Main.tsx */
+  .project-container {
+    @apply grid;
+  }
 }
