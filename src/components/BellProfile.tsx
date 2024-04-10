@@ -20,7 +20,7 @@ export default function BellProfile() {
       </div>
       {/* This is profile menu */}
       <Menu as="div" className="relative ml-3">
-        <div>
+        <div className="lg:flex lg:items-center lg:gap-3">
           <Menu.Button className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
             <span className="absolute -inset-1.5" />
             <span className="sr-only">Open user menu</span>
@@ -30,6 +30,9 @@ export default function BellProfile() {
               alt=""
             />
           </Menu.Button>
+          <p className="hidden text-lg font-semibold lg:inline-block">
+            Mr. Smith
+          </p>
         </div>
         <Transition
           as={Fragment}

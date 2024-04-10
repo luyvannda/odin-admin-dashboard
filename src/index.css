@@ -13,7 +13,7 @@
 
 @layer components {
   .wrapper {
-    @apply grid sm:grid-cols-app-col sm:grid-rows-app-row;
+    @apply grid overflow-x-hidden sm:grid-cols-app sm:grid-rows-app lg:grid-cols-app-lg;
   }
 
   .navbar-container {
@@ -21,7 +21,7 @@
   }
 
   .header-container {
-    @apply grid grid-cols-1 grid-rows-header-row;
+    @apply grid grid-cols-1 grid-rows-header md:h-28 lg:grid-cols-header-lg lg:items-center xl:grid-cols-header-xl;
   }
 
   /* This is header btn */
