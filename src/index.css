@@ -28,4 +28,8 @@
   .btn {
     @apply w-[4.5rem] rounded-lg bg-[#1992d4] py-1 text-white ring-1  hover:bg-blue-400 focus:ring-blue-700 sm:w-[5.5rem];
   }
+
+  .main-container {
+    @apply grid grid-cols-1;
+  }
 }
