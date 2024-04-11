@@ -24,7 +24,11 @@ export default function Header() {
       </div>
 
       <div className="mx-2 grid grid-cols-2 items-center sm:col-start-1 sm:col-end-3 sm:row-span-1 sm:row-start-2 sm:mx-4 sm:-mt-2 md:h-16 ">
-        <div className="flex items-center justify-center gap-2 sm:justify-normal">
+        <a
+          href="https://github.com/luyvannda"
+          target="_blank"
+          className="flex items-center justify-center gap-2 sm:justify-normal"
+        >
           <img
             className="h-12 w-12 rounded-full lg:h-14 lg:w-14"
             src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
@@ -36,7 +40,7 @@ export default function Header() {
               Mr. Smith (@smith)
             </h1>
           </div>
-        </div>
+        </a>
 
         <div className="flex flex-wrap justify-evenly gap-3 sm:flex-nowrap sm:justify-normal lg:hidden">
           <button className="btn">New</button>

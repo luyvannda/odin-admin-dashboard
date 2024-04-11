@@ -37,4 +37,9 @@
   .project-container {
     @apply grid gap-2 md:grid-cols-2;
   }
+
+  /* this container is for Announcements and Trending */
+  .news-container {
+    @apply grid;
+  }
 }
