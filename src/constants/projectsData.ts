@@ -26,7 +26,7 @@ export const projectsData: ProjectsProp[] = [
   {
     id: 3,
     imgCover: "workation.webp",
-    title: "WORKATION RENTAL PROPERTY",
+    title: "WORKATION",
     livePreview: "https://luyvannda.github.io/workation/",
     sourceCode: "https://github.com/luyvannda/workation",
   },
