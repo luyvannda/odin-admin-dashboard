@@ -3,7 +3,7 @@ import { projectsData } from "../constants/projectsData";
 export default function Projects() {
   return (
     <>
-      <h1 className="mb-2 ml-4 font-medium">Your Projects</h1>
+      <h1 className="mb-2 ml-4 font-semibold sm:text-lg">Your Projects</h1>
       <div className="project-container">
         {projectsData.map((project) => (
           <div

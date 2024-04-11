@@ -20,10 +20,21 @@ export const announcement = [
   {
     id: 1,
     title: "Site Maintenance",
-    description: "New update is coming soon. Our site will be maintenance on",
+    description:
+      "New update is coming soon. Our site will be undergoing maintenance on",
   },
-  { id: 2, title: "", description: "" },
-  { id: 3, title: "", description: "" },
+  {
+    id: 2,
+    title: "New Update",
+    description:
+      "Get ready for a wild ride! Our latest update includes dancing unicorns and flying spaghetti code. 🦄🍝",
+  },
+  {
+    id: 3,
+    title: "Update Privacy Policy",
+    description:
+      "We’ve updated our privacy policy to include a section on how we protect your data from alien invasions. 👽🔒",
+  },
 ];
 
 // Calculate the maintenance date (3 days from today)
@@ -34,9 +45,5 @@ maintenanceDate.setDate(currentDate.getDate() + 3);
 // Format the maintenance date as "Day, Month Day, Year" with date-fns
 const formattedMaintenanceDate = format(maintenanceDate, "EEE, MMMM d, yyyy");
 
-console.log(formattedMaintenanceDate);
-
 // add dynamic formatted maintenance date to the announcement description
-announcement[0].description += ` ${formattedMaintenanceDate}.`;
-
-console.log(announcement);
+announcement[0].description += ` ${formattedMaintenanceDate}, from 23:00 to 24:00 (UTC+7).`;
