@@ -35,6 +35,6 @@
 
   /* this is for Projects card layout for Main.tsx */
   .project-container {
-    @apply grid gap-2;
+    @apply grid gap-2 md:grid-cols-2;
   }
 }

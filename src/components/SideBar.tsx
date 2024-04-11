@@ -3,7 +3,7 @@ import { classNames } from "./NavBar";
 
 export default function SideBar() {
   return (
-    <div className="hidden h-[100vh] sm:block">
+    <div className="hidden min-h-[100vh] sm:block">
       <div className="">
         {navigation.map((item) => (
           <div key={item.id} className="grid">

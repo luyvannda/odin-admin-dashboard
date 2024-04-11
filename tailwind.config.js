@@ -12,7 +12,7 @@ export default {
       },
 
       gridTemplateRows: {
-        "app": "1fr 4fr",
+        "app": "auto 4fr",
         "header": "auto 1fr",
         "project-card": "1fr, 12px",
       },

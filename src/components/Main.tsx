@@ -2,7 +2,7 @@ import Projects from "./Projects";
 
 export default function Main() {
   return (
-    <div className="main-container mt-4 min-h-screen bg-blue-100 py-4 shadow-xl">
+    <div className="main-container mt-4 bg-blue-100 py-4 shadow-xl">
       <Projects />
       <div>
         <h1>Announcements</h1>
