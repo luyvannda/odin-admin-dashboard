@@ -47,3 +47,27 @@ const formattedMaintenanceDate = format(maintenanceDate, "EEE, MMMM d, yyyy");
 
 // add dynamic formatted maintenance date to the announcement description
 announcement[0].description += ` ${formattedMaintenanceDate}, from 23:00 to 24:00 (UTC+7).`;
+
+export const trendingData = [
+  {
+    id: 1,
+    userName: "@rocky",
+    description: "World Class Rambo",
+  },
+  {
+    id: 2,
+    userName: "@joker",
+    description: "Super Villain",
+  },
+  {
+    id: 3,
+    userName: "@taylor",
+    description: "Pretty Smart Singer",
+  },
+
+  {
+    id: 4,
+    userName: "@Cena",
+    description: "You Can't See Me",
+  },
+];
