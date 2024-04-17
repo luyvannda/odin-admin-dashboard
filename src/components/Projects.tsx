@@ -5,7 +5,7 @@ export default function Projects() {
     <div className="project-container">
       {projectsData.map((project) => (
         <div
-          className="grid transform grid-cols-project-card grid-rows-project-card px-4  transition-transform duration-300 hover:scale-[103%]"
+          className="grid transform grid-cols-project-card grid-rows-project-card px-4 transition-transform  duration-300 hover:scale-[103%] lg:px-6 xl:px-4"
           key={project.id}
         >
           <a href={project.livePreview} target="_blank">
