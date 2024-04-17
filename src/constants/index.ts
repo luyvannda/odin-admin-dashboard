@@ -48,26 +48,41 @@ const formattedMaintenanceDate = format(maintenanceDate, "EEE, MMMM d, yyyy");
 // add dynamic formatted maintenance date to the announcement description
 announcement[0].description += ` ${formattedMaintenanceDate}, from 23:00 to 24:00 (UTC+7).`;
 
-export const trendingData = [
+export type trendingDataProps = {
+  id: number;
+  userName: string;
+  description: string;
+  imageSrc: string;
+};
+
+export const trendingData: trendingDataProps[] = [
   {
     id: 1,
     userName: "@rocky",
-    description: "World Class Rambo",
+    description: "World Class Model",
+    imageSrc:
+      "https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=3023&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: 2,
     userName: "@joker",
     description: "Super Villain",
+    imageSrc:
+      "https://images.unsplash.com/photo-1570805140270-9d3ce9325319?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: 3,
     userName: "@taylor",
-    description: "Pretty Smart Singer",
+    description: "Aspire Singer",
+    imageSrc:
+      "https://images.unsplash.com/photo-1608319917470-9d9179430f8d?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 
   {
     id: 4,
-    userName: "@Cena",
+    userName: "@cena",
     description: "You Can't See Me",
+    imageSrc:
+      "https://images.unsplash.com/photo-1595947006841-0984683d036e?q=80&w=3264&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
