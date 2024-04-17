@@ -14,7 +14,7 @@ export default {
       gridTemplateRows: {
         "app": "auto 4fr",
         "header": "auto 1fr",
-        "project-card": "1fr, 12px",
+        "project-card": "1fr, 16px",
       },
     },
   },

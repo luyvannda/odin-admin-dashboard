@@ -42,7 +42,7 @@ export const projectsData: ProjectsProp[] = [
   {
     id: 5,
     imgCover: "tesla-landing-page.webp",
-    title: "TESLA LANDING PAGE",
+    title: "TESLA LANDING",
     livePreview: "https://luyvannda.github.io/tesla-landing-page/",
     sourceCode: "https://github.com/luyvannda/tesla-landing-page",
   },
