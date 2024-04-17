@@ -9,6 +9,7 @@ export default {
         "header-lg": "2fr minmax(32vw ,1fr)",
         "header-xl": "2fr minmax(40vw,1fr)",
         "project-card": "12px 1fr",
+        "project-card-lg": "repeat(autofill, 1fr)",
       },
 
       gridTemplateRows: {

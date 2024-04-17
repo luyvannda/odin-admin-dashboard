@@ -30,7 +30,7 @@
   }
 
   .main-container {
-    @apply grid grid-cols-1;
+    @apply grid grid-cols-1 lg:grid-cols-2;
   }
 
   /* this is for Projects card layout for Main.tsx */
